@@ -7,9 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "sqlite3.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UITabBarDelegate>
+
+@property (nonatomic, retain) NSString *databaseName;
+
+@property (nonatomic, retain) NSString *databasePath;
 
 @property (strong, nonatomic) UIWindow *window;
+
+
+
+
+
+
+
+
+
 
 @end
